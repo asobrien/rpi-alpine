@@ -5,7 +5,7 @@ ADD rootfs.tar.gz /
 
 RUN apk update && \
     apk upgrade && \
-    rm /var/cache/apk/* \
+    rm /var/cache/apk/* && \
     apk update
 
 ENTRYPOINT ["/bin/sh"]
